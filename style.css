@@ -2,9 +2,44 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Syne", sans-serif;
 }
 
 html, body {
   height: 100%;
   width: 100%;
+}
+
+header {
+  width: 100%;
+  padding: 1.5rem;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  justify-content: space-between;
+}
+header nav .nav-part1 a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: rgb(22, 22, 22);
+}
+header nav .nav-part2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+header nav .nav-part2 i {
+  font-size: 2rem;
+}
+header nav .nav-part2 button {
+  font-size: 1.2rem;
+  border: none;
+  padding: 8px 1.4rem;
+  color: white;
+  background: rgb(22, 22, 22);
+  border-radius: 30px;
 }/*# sourceMappingURL=style.css.map */

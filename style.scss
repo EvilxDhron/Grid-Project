@@ -2,9 +2,57 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Syne", sans-serif;
 }
 
 html, body{
     height: 100%;
     width: 100%;
+}
+
+
+@mixin row-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+$mobile-padding: 1.5rem;
+$main-font-color: rgb(22, 22, 22);
+$secondary-font: "Poppins", sans-serif;
+
+header{
+    width: 100%;
+    padding: $mobile-padding;
+
+    nav{
+        @include row-center;
+        justify-content: space-between;
+
+        .nav-part1{
+            a{
+                text-decoration: none;
+                font-size: 2rem;
+                color: $main-font-color;
+            }
+        }
+
+        .nav-part2{
+            @include row-center;
+
+            i{
+                font-size: 2rem;
+            }
+
+            button{
+                font-size: 1.2rem;
+                border: none;
+                padding: 8px 1.4rem;
+                color: white;
+                background: $main-font-color;
+                border-radius: 30px;
+            }
+        }
+    }
 }
