@@ -5,15 +5,15 @@
   font-family: "Syne", sans-serif;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
 }
 
 header {
   width: 100%;
-  padding: 1.5rem;
-  background-color: rgb(196, 195, 195);
+  padding: 1rem;
 }
 header nav {
   display: flex;
@@ -24,8 +24,8 @@ header nav {
 }
 header nav .nav-part1 a {
   text-decoration: none;
-  font-size: 2rem;
-  color: rgb(22, 22, 22);
+  font-size: 1.5rem;
+  color: #000022;
 }
 header nav .nav-part2 {
   display: flex;
@@ -34,13 +34,29 @@ header nav .nav-part2 {
   gap: 1rem;
 }
 header nav .nav-part2 i {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 header nav .nav-part2 button {
-  font-size: 1.2rem;
+  font-size: 1rem;
   border: none;
   padding: 8px 1.4rem;
   color: white;
-  background: rgb(22, 22, 22);
+  background: #1d201f;
   border-radius: 30px;
+}
+
+@media (min-width: 768px) {
+  header {
+    padding: 2vh 3vw;
+  }
+  header nav .nav-part1 a {
+    font-size: 2.2rem;
+  }
+  header nav .nav-part2 i {
+    font-size: 2.2rem;
+  }
+  header nav .nav-part2 button {
+    font-size: 1.5rem;
+    padding: 0.7rem 2rem;
+  }
 }
