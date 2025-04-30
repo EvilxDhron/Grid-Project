@@ -13,6 +13,7 @@ html, body {
 header {
   width: 100%;
   padding: 1.5rem;
+  background-color: rgb(196, 195, 195);
 }
 header nav {
   display: flex;
@@ -42,4 +43,4 @@ header nav .nav-part2 button {
   color: white;
   background: rgb(22, 22, 22);
   border-radius: 30px;
-}/*# sourceMappingURL=style.css.map */
+}

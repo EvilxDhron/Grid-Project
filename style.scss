@@ -25,6 +25,7 @@ $secondary-font: "Poppins", sans-serif;
 header{
     width: 100%;
     padding: $mobile-padding;
+    background-color: rgb(196, 195, 195);
 
     nav{
         @include row-center;
