@@ -18,14 +18,20 @@ body {
   gap: 1rem;
 }
 
+@mixin col-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
 
-$mobile-padding: 1rem;
 $main-font-color: #000022;
 $secondary-font: "Poppins", sans-serif;
 
 header {
   width: 100%;
-  padding: $mobile-padding;
+  padding: 1rem 1.4rem;
   // background-color: #666370; Good color but not suitable for this project 😊.
 
   nav {
@@ -60,3 +66,75 @@ header {
 }
 
 @import "_media.scss";
+
+main {
+  width: 100%;
+  padding: 1rem 1.4rem;
+
+  .hero {
+    width: 100%;
+    .hero-container {
+      @include col-center;
+      gap: 3rem;
+
+      .hero-part1 {
+        @include col-center;
+        gap: 1rem;
+
+        h1 {
+          font-family: "Poppins", sans-serif;
+          font-weight: 600;
+          font-size: 2.1rem;
+          color: $main-font-color;
+          line-height: 1.4;
+
+          span {
+            color: grey;
+            font-weight: 700;
+          }
+        }
+        p {
+          font-size: 1.1rem;
+          color: grey;
+        }
+      }
+
+      .hero-part2 {
+        aspect-ratio: 1/1;
+        width: 100%;
+        display: grid;
+        gap: 1.4rem;
+        grid-template-areas:
+          "a a b b"
+          "a a b b"
+          "a a b b"
+          "a a b b"
+          "a a b b"
+          "a a c c"
+          "a a c c"
+          "a a c c";
+
+        .imgdiv {
+          width: 100%;
+          border-radius: 12px;
+        }
+
+        .imgdiv1 {
+          grid-area: a;
+          background-image: url("https://plus.unsplash.com/premium_photo-1675433344518-21eb72dfc7a5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+          background-size: cover;
+        }
+        .imgdiv2 {
+          grid-area: b;
+          background-image: url("https://images.unsplash.com/photo-1518495973542-4542c06a5843?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+          background-size: cover;
+        }
+        .imgdiv3 {
+          grid-area: c;
+          background-image: url("https://plus.unsplash.com/premium_photo-1675826774815-35b8a48ddc2c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+          background-size: cover;
+        }
+      }
+    }
+  }
+}
