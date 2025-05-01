@@ -115,17 +115,33 @@ main .hero .hero-container .hero-part2 .imgdiv3 {
 
 @media (min-width: 768px) {
   header {
-    padding: 2vh 3vw;
+    padding: 2vh 4vw;
   }
   header nav .nav-part1 a {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
   }
   header nav .nav-part2 i {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
   }
   header nav .nav-part2 button {
-    font-size: 1.5rem;
-    padding: 0.7rem 2rem;
+    font-size: 1rem;
+    padding: 0.7rem 1.5rem;
+  }
+  main .hero {
+    padding: 2vh calc(1.5vw + 1px);
+  }
+  main .hero .hero-container .hero-part1 {
+    align-items: flex-start;
+  }
+  main .hero .hero-container .hero-part1 h1 {
+    font-size: clamp(3rem, 7vw + 1px, 4rem);
+  }
+  main .hero .hero-container .hero-part1 p {
+    font-size: clamp(1.1rem, 2.5vw + px, 1.4rem);
+    width: 80%;
+  }
+  main .hero .hero-container .hero-part2 {
+    gap: 2.5rem;
   }
 }
 @media (min-width: 1024px) {

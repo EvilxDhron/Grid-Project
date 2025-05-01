@@ -1,21 +1,42 @@
 @media (min-width: 768px) {
   header {
-    padding: 2vh 3vw;
+    padding: 2vh 4vw;
 
     nav {
       .nav-part1 {
         a {
-          font-size: 2.2rem;
+          font-size: 1.5rem;
         }
       }
 
       .nav-part2 {
         i {
-          font-size: 2.2rem;
+          font-size: 1.5rem;
         }
         button {
-          font-size: 1.5rem;
-          padding: 0.7rem 2rem;
+          font-size: 1rem;
+          padding: 0.7rem 1.5rem;
+        }
+      }
+    }
+  }
+
+  main {
+    .hero {
+      padding: 2vh calc(1.5vw + 1px);
+      .hero-container {
+        .hero-part1 {
+          align-items: flex-start;
+          h1 {
+            font-size: clamp(3rem, calc(7vw + 1px), 4rem);
+          }
+          p {
+            font-size: clamp(1.1rem, calc(2.5vw + px), 1.4rem);
+            width: 80%;
+          }
+        }
+        .hero-part2{
+          gap: 2.5rem;
         }
       }
     }
@@ -23,28 +44,28 @@
 }
 
 @media (min-width: 1024px) {
-  header{
+  header {
     padding: 2vh 4vw;
   }
 
-  main{
-    .hero{
+  main {
+    .hero {
       padding: 4dvh 3vw;
 
-      .hero-container{
+      .hero-container {
         height: fit-content;
         flex-direction: row;
 
-        .hero-part1{
+        .hero-part1 {
           width: 50%;
           height: 100%;
           justify-content: flex-start;
           align-items: flex-start;
 
-          h1{
+          h1 {
             font-size: clamp(3rem, calc(5vw + 1px), 5rem);
           }
-          button{
+          button {
             display: block;
             font-size: 1rem;
             border: none;
@@ -55,18 +76,18 @@
             margin-top: 2rem;
           }
         }
-        .hero-part2{
+        .hero-part2 {
           width: 50%;
           gap: 2rem;
           grid-template-areas:
-          ". . b b"
-          "a a b b"
-          "a a b b"
-          "a a b b"
-          "a a b b"
-          "a a c c"
-          "a a c c"
-          ". . c c";
+            ". . b b"
+            "a a b b"
+            "a a b b"
+            "a a b b"
+            "a a b b"
+            "a a c c"
+            "a a c c"
+            ". . c c";
         }
       }
     }
