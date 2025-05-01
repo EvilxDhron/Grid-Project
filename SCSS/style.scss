@@ -65,7 +65,6 @@ header {
   }
 }
 
-@import "_media.scss";
 
 main {
   width: 100%;
@@ -73,6 +72,7 @@ main {
 
   .hero {
     width: 100%;
+
     .hero-container {
       @include col-center;
       gap: 3rem;
@@ -96,6 +96,9 @@ main {
         p {
           font-size: 1.1rem;
           color: grey;
+        }
+        button{
+          display: none;
         }
       }
 
@@ -138,3 +141,5 @@ main {
     }
   }
 }
+
+@import "_media.scss";

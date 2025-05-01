@@ -45,21 +45,6 @@ header nav .nav-part2 button {
   border-radius: 30px;
 }
 
-@media (min-width: 768px) {
-  header {
-    padding: 2vh 3vw;
-  }
-  header nav .nav-part1 a {
-    font-size: 2.2rem;
-  }
-  header nav .nav-part2 i {
-    font-size: 2.2rem;
-  }
-  header nav .nav-part2 button {
-    font-size: 1.5rem;
-    padding: 0.7rem 2rem;
-  }
-}
 main {
   width: 100%;
   padding: 1rem 1.4rem;
@@ -98,6 +83,9 @@ main .hero .hero-container .hero-part1 p {
   font-size: 1.1rem;
   color: grey;
 }
+main .hero .hero-container .hero-part1 button {
+  display: none;
+}
 main .hero .hero-container .hero-part2 {
   aspect-ratio: 1/1;
   width: 100%;
@@ -123,4 +111,57 @@ main .hero .hero-container .hero-part2 .imgdiv3 {
   grid-area: c;
   background-image: url("https://plus.unsplash.com/premium_photo-1675826774815-35b8a48ddc2c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-size: cover;
+}
+
+@media (min-width: 768px) {
+  header {
+    padding: 2vh 3vw;
+  }
+  header nav .nav-part1 a {
+    font-size: 2.2rem;
+  }
+  header nav .nav-part2 i {
+    font-size: 2.2rem;
+  }
+  header nav .nav-part2 button {
+    font-size: 1.5rem;
+    padding: 0.7rem 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  header {
+    padding: 2vh 4vw;
+  }
+  main .hero {
+    padding: 4dvh 3vw;
+  }
+  main .hero .hero-container {
+    height: -moz-fit-content;
+    height: fit-content;
+    flex-direction: row;
+  }
+  main .hero .hero-container .hero-part1 {
+    width: 50%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  main .hero .hero-container .hero-part1 h1 {
+    font-size: clamp(3rem, 5vw + 1px, 5rem);
+  }
+  main .hero .hero-container .hero-part1 button {
+    display: block;
+    font-size: 1rem;
+    border: none;
+    padding: 8px 1.4rem;
+    color: white;
+    background: #1d201f;
+    border-radius: 30px;
+    margin-top: 2rem;
+  }
+  main .hero .hero-container .hero-part2 {
+    width: 50%;
+    gap: 2rem;
+    grid-template-areas: ". . b b" "a a b b" "a a b b" "a a b b" "a a b b" "a a c c" "a a c c" ". . c c";
+  }
 }
