@@ -184,8 +184,8 @@ main .hero .hero-container .hero-part2 .imgdiv3 {
     font-size: 1rem;
     padding: 0.7rem 1.5rem;
   }
-  main .hero {
-    padding: 2vh calc(1.5vw + 1px);
+  main {
+    padding: 4vh calc(3.2vw + 1px);
   }
   main .hero .hero-container .hero-part1 {
     align-items: flex-start;
@@ -234,8 +234,8 @@ main .hero .hero-container .hero-part2 .imgdiv3 {
   header nav .nav-part2 i:nth-child(3) {
     display: none;
   }
-  main .hero {
-    padding: 4dvh 2vw;
+  main {
+    padding: 4dvh 3.2vw;
   }
   main .hero .hero-container {
     height: -moz-fit-content;
@@ -323,6 +323,12 @@ main .hero .hero-container .hero-part2 .imgdiv3 {
   }
   header nav .nav-part2 i:nth-child(3) {
     display: none;
+  }
+  main {
+    padding: 2rem clamp(3rem, 4vw + 1px, 4rem);
+  }
+  main .hero {
+    padding: 3vh 0;
   }
   main .hero .hero-container .hero-part1 p {
     font-size: clamp(1.4rem, 1.5vw + 1px, 1.8rem);

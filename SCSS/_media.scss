@@ -22,8 +22,9 @@
   }
 
   main {
+    padding: 4vh calc(3.2vw + 1px);
+  
     .hero {
-      padding: 2vh calc(1.5vw + 1px);
       .hero-container {
         .hero-part1 {
           align-items: flex-start;
@@ -87,9 +88,9 @@
   }
 
   main {
-    .hero {
-      padding: 4dvh 2vw;
+      padding: 4dvh 3.2vw;
 
+    .hero {
       .hero-container {
         height: fit-content;
         flex-direction: row;
@@ -204,7 +205,10 @@
     }
   }
   main{
+    padding: 2rem clamp(3rem, calc(4vw + 1px), 4rem);
+
     .hero{
+      padding: 3vh 0;
       .hero-container{
         .hero-part1{
           p{
