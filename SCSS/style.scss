@@ -154,4 +154,44 @@ main {
   }
 }
 
+.destination{
+  width: 100%;
+  padding: 1rem 0;
+
+  .dest-container{
+    @include col-center;
+    align-items: flex-start;
+    overflow: hidden;
+
+    .item-container{
+      @include row-center;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding: 1rem 2rem;
+      width: fit-content;
+
+      
+
+      .items{
+        @include col-center;
+        align-items: flex-start;
+        gap: 1.5rem;
+        scroll-snap-align: start;
+        flex-shrink: 0;
+        max-width: 300px;
+        aspect-ratio: 1/1;
+
+        img{
+          width: 100%;
+          height: 100%;
+          aspect-ratio: 1/1;
+          object-fit: cover;
+          border-radius: 30px;
+        }
+      }
+    }
+  }
+}
+
+
 @import "_media.scss";
