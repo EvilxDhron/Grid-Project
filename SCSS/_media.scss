@@ -23,7 +23,7 @@
 
   main {
     padding: 4vh calc(3.2vw + 1px);
-  
+
     .hero {
       .hero-container {
         .hero-part1 {
@@ -54,7 +54,7 @@
           font-size: 1.4rem;
         }
       }
-      .nav-part2{
+      .nav-part2 {
         i {
           cursor: default;
           font-size: 1.5rem;
@@ -64,7 +64,7 @@
           border-radius: 50px;
           position: relative;
 
-          p{
+          p {
             display: block;
             font-size: 1rem;
             opacity: 70%;
@@ -80,7 +80,7 @@
           font-size: 1rem;
           padding: 0.5rem 1.4rem;
         }
-        i:nth-child(3){
+        i:nth-child(3) {
           display: none;
         }
       }
@@ -88,9 +88,11 @@
   }
 
   main {
-      padding: 4dvh 3.2vw;
+    padding: 4dvh 3.2vw;
 
     .hero {
+      padding: 1rem 0;
+      padding-bottom: 2rem;
       .hero-container {
         height: fit-content;
         flex-direction: row;
@@ -98,11 +100,13 @@
         .hero-part1 {
           width: 50%;
           height: 100%;
-          justify-content: flex-start;
-          align-items: flex-start;
+          // justify-content: flex-start;
+          // align-items: flex-start;
+          gap: 2rem;
 
           h1 {
-            font-size: clamp(3rem, calc(5vw + 1px), 5rem);
+            font-size: clamp(3rem, calc(5vw + 1px), 6rem);
+            line-height: 1.2;
           }
           button {
             display: block;
@@ -112,7 +116,7 @@
             color: white;
             background: #1d201f;
             border-radius: 30px;
-            margin-top: 2rem;
+            margin-top: 1rem;
           }
         }
         .hero-part2 {
@@ -134,19 +138,19 @@
 }
 
 @media (min-width: 1199px) {
-  header{
-    nav{
-      .nav-middle{
+  header {
+    nav {
+      .nav-middle {
         display: block;
 
-        ul{
+        ul {
           @include row-center;
           gap: 2rem;
 
-          li{
+          li {
             list-style: none;
 
-            a{
+            a {
               text-decoration: none;
               color: $main-font-color;
               font-size: 0.8rem;
@@ -161,68 +165,68 @@
 }
 
 @media (min-width: 1549px) {
-  header{
-    nav{
-      .nav-part1{
-        a{
+  header {
+    nav {
+      .nav-part1 {
+        a {
           font-size: clamp(1.5rem, calc(2vw + 1px), 2.2rem);
         }
       }
-      .nav-middle{
+      .nav-middle {
         display: block;
 
-        ul{
+        ul {
           @include row-center;
-          gap: 2rem;
+          gap: clamp(2.1rem, calc(3vw + 1px), 4rem);
 
-          li{
+          li {
             list-style: none;
 
-            a{
-              font-size: 1.1rem;
+            a {
+              font-size: clamp(1.1rem, calc(1.2vw + 1px), 1.6rem);
             }
           }
         }
       }
-      .nav-part2{
+      .nav-part2 {
         i {
           font-size: 2rem;
           padding: 0.6rem 9rem;
           padding-right: 1.5rem;
 
-          p{
+          p {
             font-size: 1.2rem;
           }
         }
         button {
-          font-size: 1.2rem;
-          padding: 0.9rem 1.5rem;
+          font-size: clamp(1.1rem, calc(1.2vw + 1px), 1.6rem);
+          padding: 0.9rem clamp(1.5rem, calc(2vw + 1px), 2.2rem);
         }
-        i:nth-child(3){
+        i:nth-child(3) {
           display: none;
         }
       }
     }
   }
-  main{
+  main {
     padding: 2rem clamp(3rem, calc(4vw + 1px), 4rem);
 
-    .hero{
+    .hero {
       padding: 3vh 0;
-      .hero-container{
-        .hero-part1{
-          p{
+      .hero-container {
+        .hero-part1 {
+          p {
             font-size: clamp(1.4rem, calc(1.5vw + 1px), 1.8rem);
           }
           button {
             margin-top: 4.5rem;
-            font-size: 1.2rem;
-            padding: 0.9rem 1.5rem;
+            font-size: clamp(1.1rem, calc(1.2vw + 1px), 1.6rem);
+            padding: 0.9rem clamp(1.5rem, calc(2vw + 1px), 2.2rem);
           }
         }
-        .hero-part2{
-          height: 70dvh;
-          width: 70dvh;
+        .hero-part2 {
+          // height: 70dvh;
+          // width: 70dvh;
           aspect-ratio: 1/1;
         }
       }
