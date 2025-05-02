@@ -11,6 +11,10 @@ body {
   width: 100%;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 header {
   width: 100%;
   padding: 1rem 1.4rem;
@@ -39,6 +43,9 @@ header nav .nav-part2 {
 }
 header nav .nav-part2 i {
   font-size: 1.5rem;
+}
+header nav .nav-part2 i p {
+  display: none;
 }
 header nav .nav-part2 button {
   font-size: 1rem;
@@ -165,6 +172,7 @@ main .hero .hero-container .hero-part2 .imgdiv3 {
     position: relative;
   }
   header nav .nav-part2 i p {
+    display: block;
     font-size: 1rem;
     opacity: 70%;
     font-family: "Poppins", sans-serif;
@@ -274,7 +282,13 @@ main .hero .hero-container .hero-part2 .imgdiv3 {
     font-size: clamp(1.4rem, 1.5vw + 1px, 1.8rem);
   }
   main .hero .hero-container .hero-part1 button {
+    margin-top: 4.5rem;
     font-size: 1.2rem;
     padding: 0.9rem 1.5rem;
+  }
+  main .hero .hero-container .hero-part2 {
+    height: 70dvh;
+    width: 70dvh;
+    aspect-ratio: 1/1;
   }
 }

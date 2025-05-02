@@ -64,6 +64,7 @@
           position: relative;
 
           p{
+            display: block;
             font-size: 1rem;
             opacity: 70%;
             font-family: "Poppins", sans-serif;
@@ -210,9 +211,15 @@
             font-size: clamp(1.4rem, calc(1.5vw + 1px), 1.8rem);
           }
           button {
+            margin-top: 4.5rem;
             font-size: 1.2rem;
             padding: 0.9rem 1.5rem;
           }
+        }
+        .hero-part2{
+          height: 70dvh;
+          width: 70dvh;
+          aspect-ratio: 1/1;
         }
       }
     }

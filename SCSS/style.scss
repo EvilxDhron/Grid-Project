@@ -11,6 +11,10 @@ body {
   width: 100%;
 }
 
+::-webkit-scrollbar{
+  display: none;
+}
+
 @mixin row-center {
   display: flex;
   align-items: center;
@@ -56,6 +60,9 @@ header {
 
       i {
         font-size: 1.5rem;
+        p{
+          display: none;
+        }
       }
 
       button {
