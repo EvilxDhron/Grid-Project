@@ -53,6 +53,35 @@
           font-size: 1.4rem;
         }
       }
+      .nav-part2{
+        i {
+          cursor: default;
+          font-size: 1.5rem;
+          padding: 0.4rem 7rem;
+          padding-right: 1rem;
+          background: rgb(226, 226, 226);
+          border-radius: 50px;
+          position: relative;
+
+          p{
+            font-size: 1rem;
+            opacity: 70%;
+            font-family: "Poppins", sans-serif;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-80%, -50%);
+          }
+        }
+
+        button {
+          font-size: 1rem;
+          padding: 0.5rem 1.4rem;
+        }
+        i:nth-child(3){
+          display: none;
+        }
+      }
     }
   }
 
@@ -96,6 +125,94 @@
             "a a c c"
             "a a c c"
             ". . c c";
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1199px) {
+  header{
+    nav{
+      .nav-middle{
+        display: block;
+
+        ul{
+          @include row-center;
+          gap: 2rem;
+
+          li{
+            list-style: none;
+
+            a{
+              text-decoration: none;
+              color: $main-font-color;
+              font-size: 0.8rem;
+              font-family: "Poppins", sans-serif;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1549px) {
+  header{
+    nav{
+      .nav-part1{
+        a{
+          font-size: clamp(1.5rem, calc(2vw + 1px), 2.2rem);
+        }
+      }
+      .nav-middle{
+        display: block;
+
+        ul{
+          @include row-center;
+          gap: 2rem;
+
+          li{
+            list-style: none;
+
+            a{
+              font-size: 1.1rem;
+            }
+          }
+        }
+      }
+      .nav-part2{
+        i {
+          font-size: 2rem;
+          padding: 0.6rem 9rem;
+          padding-right: 1.5rem;
+
+          p{
+            font-size: 1.2rem;
+          }
+        }
+        button {
+          font-size: 1.2rem;
+          padding: 0.9rem 1.5rem;
+        }
+        i:nth-child(3){
+          display: none;
+        }
+      }
+    }
+  }
+  main{
+    .hero{
+      .hero-container{
+        .hero-part1{
+          p{
+            font-size: clamp(1.4rem, calc(1.5vw + 1px), 1.8rem);
+          }
+          button {
+            font-size: 1.2rem;
+            padding: 0.9rem 1.5rem;
+          }
         }
       }
     }

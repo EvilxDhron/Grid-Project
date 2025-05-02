@@ -26,6 +26,10 @@ header nav .nav-part1 a {
   text-decoration: none;
   font-size: 1.5rem;
   color: #000022;
+  font-weight: 600;
+}
+header nav .nav-middle {
+  display: none;
 }
 header nav .nav-part2 {
   display: flex;
@@ -151,6 +155,31 @@ main .hero .hero-container .hero-part2 .imgdiv3 {
   header nav .nav-part1 a {
     font-size: 1.4rem;
   }
+  header nav .nav-part2 i {
+    cursor: default;
+    font-size: 1.5rem;
+    padding: 0.4rem 7rem;
+    padding-right: 1rem;
+    background: rgb(226, 226, 226);
+    border-radius: 50px;
+    position: relative;
+  }
+  header nav .nav-part2 i p {
+    font-size: 1rem;
+    opacity: 70%;
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-80%, -50%);
+  }
+  header nav .nav-part2 button {
+    font-size: 1rem;
+    padding: 0.5rem 1.4rem;
+  }
+  header nav .nav-part2 i:nth-child(3) {
+    display: none;
+  }
   main .hero {
     padding: 4dvh 2vw;
   }
@@ -182,5 +211,70 @@ main .hero .hero-container .hero-part2 .imgdiv3 {
     width: 50%;
     gap: 2rem;
     grid-template-areas: ". . b b" "a a b b" "a a b b" "a a b b" "a a b b" "a a c c" "a a c c" ". . c c";
+  }
+}
+@media (min-width: 1199px) {
+  header nav .nav-middle {
+    display: block;
+  }
+  header nav .nav-middle ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    gap: 2rem;
+  }
+  header nav .nav-middle ul li {
+    list-style: none;
+  }
+  header nav .nav-middle ul li a {
+    text-decoration: none;
+    color: #000022;
+    font-size: 0.8rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+  }
+}
+@media (min-width: 1549px) {
+  header nav .nav-part1 a {
+    font-size: clamp(1.5rem, 2vw + 1px, 2.2rem);
+  }
+  header nav .nav-middle {
+    display: block;
+  }
+  header nav .nav-middle ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    gap: 2rem;
+  }
+  header nav .nav-middle ul li {
+    list-style: none;
+  }
+  header nav .nav-middle ul li a {
+    font-size: 1.1rem;
+  }
+  header nav .nav-part2 i {
+    font-size: 2rem;
+    padding: 0.6rem 9rem;
+    padding-right: 1.5rem;
+  }
+  header nav .nav-part2 i p {
+    font-size: 1.2rem;
+  }
+  header nav .nav-part2 button {
+    font-size: 1.2rem;
+    padding: 0.9rem 1.5rem;
+  }
+  header nav .nav-part2 i:nth-child(3) {
+    display: none;
+  }
+  main .hero .hero-container .hero-part1 p {
+    font-size: clamp(1.4rem, 1.5vw + 1px, 1.8rem);
+  }
+  main .hero .hero-container .hero-part1 button {
+    font-size: 1.2rem;
+    padding: 0.9rem 1.5rem;
   }
 }
