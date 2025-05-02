@@ -118,7 +118,7 @@ main .hero .hero-container .hero-part2 .imgdiv3 {
     padding: 2vh 4vw;
   }
   header nav .nav-part1 a {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   header nav .nav-part2 i {
     font-size: 1.5rem;
@@ -146,10 +146,13 @@ main .hero .hero-container .hero-part2 .imgdiv3 {
 }
 @media (min-width: 1024px) {
   header {
-    padding: 2vh 4vw;
+    padding: 2vh 3.4vw;
+  }
+  header nav .nav-part1 a {
+    font-size: 1.4rem;
   }
   main .hero {
-    padding: 4dvh 3vw;
+    padding: 4dvh 2vw;
   }
   main .hero .hero-container {
     height: -moz-fit-content;

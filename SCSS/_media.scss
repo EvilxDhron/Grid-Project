@@ -5,7 +5,7 @@
     nav {
       .nav-part1 {
         a {
-          font-size: 1.5rem;
+          font-size: 1.3rem;
         }
       }
 
@@ -35,7 +35,7 @@
             width: 80%;
           }
         }
-        .hero-part2{
+        .hero-part2 {
           gap: 2.5rem;
         }
       }
@@ -45,12 +45,20 @@
 
 @media (min-width: 1024px) {
   header {
-    padding: 2vh 4vw;
+    padding: 2vh 3.4vw;
+
+    nav {
+      .nav-part1 {
+        a {
+          font-size: 1.4rem;
+        }
+      }
+    }
   }
 
   main {
     .hero {
-      padding: 4dvh 3vw;
+      padding: 4dvh 2vw;
 
       .hero-container {
         height: fit-content;
