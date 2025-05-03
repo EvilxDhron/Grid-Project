@@ -152,6 +152,7 @@ main .hero .hero-container .hero-part2 .imgdiv3 {
   overflow: hidden;
 }
 .destination .dest-container h2 {
+  font-size: clamp(1.5rem, 2vw + 1px, 2.4rem);
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   color: #000022;
