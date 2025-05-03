@@ -189,13 +189,17 @@ main {
       a {
         text-decoration: none;
         color: $main-font-color;
-        font-size: clamp(1.1rem, calc(2vw + 1px), 1.5rem);
+        font-size: clamp(1.1rem, calc(2vw + 1px), 1.4rem);
         font-weight: 500;
         font-family: "Poppins", sans-serif;
       }
       i {
         font-size: clamp(2.1rem, calc(3vw + 1px), 4rem);
       }
+    }
+
+    .types-div-2{
+      display: none;
     }
 
     .item-container {

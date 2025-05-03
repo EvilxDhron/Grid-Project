@@ -165,6 +165,40 @@
   main {
     .destination {
       .dest-container {
+        .types-div-2 {
+          display: block;
+          width: 100%;
+
+          ul {
+            display: flex;
+            flex-direction: row;
+            overflow-x: auto;
+            width: 100%;
+            gap: calc(3.5vw + 1px);
+            padding: 1rem 2rem;
+            padding-bottom: 0.6rem;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+
+            li {
+              list-style: none;
+              scroll-snap-align: start;
+
+              a {
+                text-decoration: none;
+                color: $main-font-color;
+                font-size: calc(1.4vw + 1px);
+                font-weight: 500;
+                font-family: "Poppins", sans-serif;
+              }
+            }
+          }
+        }
+
+        .types-div {
+          display: none;
+        }
+
         .item-container {
           .items {
             max-width: 22vw;

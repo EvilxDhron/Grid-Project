@@ -174,12 +174,15 @@ main .hero .hero-container .hero-part2 .imgdiv3 {
 .destination .dest-container .types-div a {
   text-decoration: none;
   color: #000022;
-  font-size: clamp(1.1rem, 2vw + 1px, 1.5rem);
+  font-size: clamp(1.1rem, 2vw + 1px, 1.4rem);
   font-weight: 500;
   font-family: "Poppins", sans-serif;
 }
 .destination .dest-container .types-div i {
   font-size: clamp(2.1rem, 3vw + 1px, 4rem);
+}
+.destination .dest-container .types-div-2 {
+  display: none;
 }
 .destination .dest-container .item-container {
   display: flex;
@@ -343,6 +346,35 @@ main .hero .hero-container .hero-part2 .imgdiv3 {
     font-size: 0.8rem;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
+  }
+  main .destination .dest-container .types-div-2 {
+    display: block;
+    width: 100%;
+  }
+  main .destination .dest-container .types-div-2 ul {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    width: 100%;
+    gap: calc(3.5vw + 1px);
+    padding: 1rem 2rem;
+    padding-bottom: 0.6rem;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+  main .destination .dest-container .types-div-2 ul li {
+    list-style: none;
+    scroll-snap-align: start;
+  }
+  main .destination .dest-container .types-div-2 ul li a {
+    text-decoration: none;
+    color: #000022;
+    font-size: calc(1.4vw + 1px);
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+  }
+  main .destination .dest-container .types-div {
+    display: none;
   }
   main .destination .dest-container .item-container .items {
     max-width: 22vw;
