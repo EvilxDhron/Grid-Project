@@ -174,7 +174,7 @@ main {
     overflow: hidden;
 
     h2{
-      font-size: clamp(1.5rem, calc(2vw + 1px), 2.4rem);
+      font-size: clamp(1.5rem, 2.5vw + 1px, 3rem);
       font-weight: 600;
       font-family: "Poppins", sans-serif;
       color: $main-font-color;
@@ -187,7 +187,7 @@ main {
       a{
         text-decoration: none;
         color: $main-font-color;
-        font-size: clamp(1.1rem, calc(1.2vw + 1px), 1.6rem);
+        font-size: clamp(1.1rem, calc(2vw + 1px), 1.5rem);
         font-weight: 500;
         font-family: "Poppins", sans-serif;
       }
@@ -225,7 +225,13 @@ main {
           border-radius: 30px;
         }
 
+        h3{
+          font-size: clamp(1.2rem, calc(2vw + 1px), 2rem);
+          font-weight: 600;
+        }
+
         p{
+          font-size: clamp(1.1rem, calc(2vw + 1px), 1.2rem);
           margin-top: 8px;
         }
       }

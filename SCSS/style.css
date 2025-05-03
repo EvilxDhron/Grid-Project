@@ -152,7 +152,7 @@ main .hero .hero-container .hero-part2 .imgdiv3 {
   overflow: hidden;
 }
 .destination .dest-container h2 {
-  font-size: clamp(1.5rem, 2vw + 1px, 2.4rem);
+  font-size: clamp(1.5rem, 2.5vw + 1px, 3rem);
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   color: #000022;
@@ -168,7 +168,7 @@ main .hero .hero-container .hero-part2 .imgdiv3 {
 .destination .dest-container .types-div a {
   text-decoration: none;
   color: #000022;
-  font-size: clamp(1.1rem, 1.2vw + 1px, 1.6rem);
+  font-size: clamp(1.1rem, 2vw + 1px, 1.5rem);
   font-weight: 500;
   font-family: "Poppins", sans-serif;
 }
@@ -207,7 +207,12 @@ main .hero .hero-container .hero-part2 .imgdiv3 {
      object-fit: cover;
   border-radius: 30px;
 }
+.destination .dest-container .item-container .items h3 {
+  font-size: clamp(1.2rem, 2vw + 1px, 2rem);
+  font-weight: 600;
+}
 .destination .dest-container .item-container .items p {
+  font-size: clamp(1.1rem, 2vw + 1px, 1.2rem);
   margin-top: 8px;
 }
 
@@ -276,7 +281,7 @@ main .hero .hero-container .hero-part2 .imgdiv3 {
     display: none;
   }
   main {
-    padding: 4dvh 3.2vw;
+    padding: 3dvh 3.2vw;
   }
   main .hero {
     padding: 1rem 0;
@@ -332,6 +337,10 @@ main .hero .hero-container .hero-part2 .imgdiv3 {
     font-size: 0.8rem;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
+  }
+  main .destination .dest-container .item-container .items {
+    max-width: 350px;
+    aspect-ratio: 3/4;
   }
 }
 @media (min-width: 1549px) {

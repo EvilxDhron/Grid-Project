@@ -88,7 +88,7 @@
   }
 
   main {
-    padding: 4dvh 3.2vw;
+    padding: 3dvh 3.2vw;
 
     .hero {
       padding: 1rem 0;
@@ -157,6 +157,18 @@
               font-family: "Poppins", sans-serif;
               font-weight: 500;
             }
+          }
+        }
+      }
+    }
+  }
+  main{
+    .destination{
+      .dest-container{
+        .item-container{
+          .items{
+            max-width: 350px;
+            aspect-ratio: 3 / 4;
           }
         }
       }
