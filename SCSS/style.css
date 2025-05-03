@@ -70,6 +70,7 @@ main .hero {
   justify-content: center;
   gap: 1rem;
   width: 100%;
+  padding: 1.5rem 0;
 }
 main .hero .hero-container {
   width: 100%;
@@ -137,7 +138,7 @@ main .hero .hero-container .hero-part2 .imgdiv3 {
 
 .destination {
   width: 100%;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
 }
 .destination .dest-container {
   width: 100%;
@@ -146,8 +147,32 @@ main .hero .hero-container .hero-part2 .imgdiv3 {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  gap: 0.4rem;
   align-items: flex-start;
   overflow: hidden;
+}
+.destination .dest-container h2 {
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #000022;
+}
+.destination .dest-container .types-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  gap: 0.1rem;
+  padding-bottom: 0.6rem;
+}
+.destination .dest-container .types-div a {
+  text-decoration: none;
+  color: #000022;
+  font-size: clamp(1.1rem, 1.2vw + 1px, 1.6rem);
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.destination .dest-container .types-div i {
+  font-size: clamp(2.1rem, 3vw + 1px, 4rem);
 }
 .destination .dest-container .item-container {
   display: flex;
@@ -180,6 +205,9 @@ main .hero .hero-container .hero-part2 .imgdiv3 {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 30px;
+}
+.destination .dest-container .item-container .items p {
+  margin-top: 8px;
 }
 
 @media (min-width: 768px) {

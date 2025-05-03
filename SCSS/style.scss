@@ -88,6 +88,7 @@ main {
   .hero {
     @include row-center;
     width: 100%;
+    padding: 1.5rem 0;
 
     .hero-container {
       width: 100%;
@@ -163,13 +164,36 @@ main {
 
 .destination {
   width: 100%;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
 
   .dest-container {
     width: 100%;
     @include col-center;
+    gap: 0.4rem;
     align-items: flex-start;
     overflow: hidden;
+
+    h2{
+      font-weight: 600;
+      font-family: "Poppins", sans-serif;
+      color: $main-font-color;
+    }
+
+    .types-div{
+      @include row-center;
+      gap: 0.1rem;
+      padding-bottom: 0.6rem;
+      a{
+        text-decoration: none;
+        color: $main-font-color;
+        font-size: clamp(1.1rem, calc(1.2vw + 1px), 1.6rem);
+        font-weight: 500;
+        font-family: "Poppins", sans-serif;
+      }
+      i{
+        font-size: clamp(2.1rem, calc(3vw + 1px), 4rem);
+      }
+    }
 
     .item-container {
       display: flex;
@@ -198,6 +222,10 @@ main {
           aspect-ratio: 1/1;
           object-fit: cover;
           border-radius: 30px;
+        }
+
+        p{
+          margin-top: 8px;
         }
       }
     }
