@@ -139,9 +139,15 @@ main .hero .hero-container .hero-part2 .imgdiv3 {
 .destination {
   width: 100%;
   padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 .destination .dest-container {
   width: 100%;
+  max-width: 2100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -339,7 +345,7 @@ main .hero .hero-container .hero-part2 .imgdiv3 {
     font-weight: 500;
   }
   main .destination .dest-container .item-container .items {
-    max-width: 350px;
+    max-width: 22vw;
     aspect-ratio: 3/4;
   }
 }

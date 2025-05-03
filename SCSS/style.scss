@@ -165,33 +165,35 @@ main {
 .destination {
   width: 100%;
   padding: 1.5rem 0;
+  @include col-center;
 
   .dest-container {
     width: 100%;
+    max-width: 2100px;
     @include col-center;
     gap: 0.4rem;
     align-items: flex-start;
     overflow: hidden;
 
-    h2{
+    h2 {
       font-size: clamp(1.5rem, 2.5vw + 1px, 3rem);
       font-weight: 600;
       font-family: "Poppins", sans-serif;
       color: $main-font-color;
     }
 
-    .types-div{
+    .types-div {
       @include row-center;
       gap: 0.1rem;
       padding-bottom: 0.6rem;
-      a{
+      a {
         text-decoration: none;
         color: $main-font-color;
         font-size: clamp(1.1rem, calc(2vw + 1px), 1.5rem);
         font-weight: 500;
         font-family: "Poppins", sans-serif;
       }
-      i{
+      i {
         font-size: clamp(2.1rem, calc(3vw + 1px), 4rem);
       }
     }
@@ -225,12 +227,12 @@ main {
           border-radius: 30px;
         }
 
-        h3{
+        h3 {
           font-size: clamp(1.2rem, calc(2vw + 1px), 2rem);
           font-weight: 600;
         }
 
-        p{
+        p {
           font-size: clamp(1.1rem, calc(2vw + 1px), 1.2rem);
           margin-top: 8px;
         }
