@@ -5,14 +5,71 @@
   }
 }
 
+@keyframes fadeOut {
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@mixin button-anime {
+  button {
+    transition: all 0.2s ease-in-out;
+  }
+  button:hover {
+    background: #00898C;
+    color: white;
+  }
+}
+
+@mixin a-anime {
+  a {
+    position: relative;
+  }
+  a::after {
+    background: #000;
+    content: "";
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-top: 2px;
+    transition: all 0.25s ease-in-out;
+  }
+  a:hover::after {
+    width: 100%;
+  }
+}
+
+header {
+  nav {
+    @include button-anime;
+    .nav-middle {
+      ul {
+        li {
+          @include a-anime;
+        }
+      }
+    }
+  }
+}
+
 main {
+  @include a-anime;
   .hero {
     .hero-container {
       .hero-part1 {
+        @include button-anime;
         h1 {
           opacity: 0;
           transform: translateY(-20px);
           animation: slideIn 1s ease-out forwards;
+        }
+        p {
+          opacity: 0;
+          scale: 0.8;
+          animation: fadeOut 1s ease-out forwards;
         }
       }
     }
