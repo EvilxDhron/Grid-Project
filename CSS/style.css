@@ -551,11 +551,11 @@ main .hero .hero-container .hero-part2 .imgdiv2 {
   transform: translateX(25px);
   animation: slideIn2 1s ease-out forwards;
 }
-main .destination .dest-container .item-container .item1 .img {
+main .destination .dest-container .item-container .items .img {
   scale: 1;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
-main .destination .dest-container .item-container .item1 .img:hover {
+main .destination .dest-container .item-container .items .img:hover {
   scale: 1.03;
 }.part3 .pt3 .elem h2 {
     font-size: 0.8rem;
