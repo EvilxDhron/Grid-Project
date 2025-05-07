@@ -125,11 +125,19 @@ main {
             scale: 1;
             transition: all 0.4s ease-in-out;
             &:hover{
-              scale: 1.03;
+              scale: 1.02;
             }
           }
         }
       }
     }
+  }
+}
+
+.st-img{
+  scale: 1;
+  transition: all 0.4s ease-in-out;
+  &:hover{
+    scale: 1.01;
   }
 }
