@@ -140,7 +140,7 @@ main {
         .imgdiv {
           width: 100%;
           // border-radius: 12px;
-          border-radius: clamp(1rem, calc(5vw + 1px), 3.5rem);
+          border-radius: clamp(1rem, calc(5vw + 1px), 2.5rem);
 
         }
 
@@ -300,7 +300,7 @@ main {
         .img{
           width: 30%;
           aspect-ratio: 1/1;
-          border-radius: clamp(1rem, calc(5vw + 1px), 3.5rem);
+          border-radius: clamp(1rem, calc(3vw + 1px), 2rem);
           overflow: hidden;
           
           img{

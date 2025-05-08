@@ -2,642 +2,947 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Syne", sans-serif;
+  font-family: "Helvetica Now Display";
 }
 
 html,
 body {
-  height: 100%;
   width: 100%;
+  height: 100%;
+}
+
+body {
+  padding: 0.8rem;
 }
 
 ::-webkit-scrollbar {
   display: none;
 }
 
+main {
+  border: 2px solid black;
+}
+main hr {
+  width: 90%;
+  margin: 0 auto;
+  height: 1px;
+  background: #000;
+}
+
 header {
-  width: 100%;
-  padding: 1rem 1.4rem;
-  display: flex;
-  justify-content: center;
+  padding: 20px;
+  padding-bottom: 0.6rem;
 }
 header nav {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 1rem;
   justify-content: space-between;
-  width: 100%;
-  max-width: 2100px;
 }
-header nav .nav-part1 a {
-  text-decoration: none;
+header nav .part1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+header nav .part1 h2 {
   font-size: 1.5rem;
-  color: #000022;
-  font-weight: 600;
+  font-weight: 400;
 }
-header nav .nav-middle {
-  display: none;
+header nav .part1 img {
+  display: inline-block;
+  width: 40px;
 }
-header nav .nav-part2 {
+header nav .part2 {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
 }
-header nav .nav-part2 i {
-  font-size: 1.5rem;
+header nav .part2 img {
+  width: 40px;
 }
-header nav .nav-part2 i p {
+header nav .part2 img:nth-child(1) {
+  width: 60px;
+}
+header nav .part3 {
   display: none;
-}
-header nav .nav-part2 button {
-  font-size: 1rem;
-  border: none;
-  padding: 8px 1.4rem;
-  color: white;
-  background: #1d201f;
-  border-radius: 30px;
 }
 
-main {
+.Hero-section {
   width: 100%;
-  padding: 1rem 1.4rem;
+  padding: 1rem 1.2rem;
 }
-main .hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  width: 100%;
-  padding: 1.5rem 0;
+.Hero-section h3 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 1rem 0;
 }
-main .hero .hero-container {
-  width: 100%;
-  max-width: 2100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  gap: 3rem;
-}
-main .hero .hero-container .hero-part1 {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  gap: 1rem;
-}
-main .hero .hero-container .hero-part1 h1 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 2.1rem;
-  color: #000022;
-  line-height: 1.4;
-}
-main .hero .hero-container .hero-part1 h1 span {
-  color: grey;
-  font-weight: 700;
-}
-main .hero .hero-container .hero-part1 p {
-  font-size: 1.1rem;
-  color: grey;
-}
-main .hero .hero-container .hero-part1 button {
-  display: none;
-}
-main .hero .hero-container .hero-part2 {
-  aspect-ratio: 1/1;
-  width: 100%;
-  display: grid;
-  gap: 1.4rem;
-  grid-template-areas: "a a b b" "a a b b" "a a b b" "a a b b" "a a b b" "a a c c" "a a c c" "a a c c";
-}
-main .hero .hero-container .hero-part2 .imgdiv {
-  width: 100%;
-  border-radius: clamp(1rem, 5vw + 1px, 3.5rem);
-}
-main .hero .hero-container .hero-part2 .imgdiv1 {
-  grid-area: a;
-  background-image: url("https://plus.unsplash.com/premium_photo-1675433344518-21eb72dfc7a5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  background-size: cover;
-}
-main .hero .hero-container .hero-part2 .imgdiv2 {
-  grid-area: b;
-  background-image: url("https://images.unsplash.com/photo-1518495973542-4542c06a5843?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  background-size: cover;
-}
-main .hero .hero-container .hero-part2 .imgdiv3 {
-  grid-area: c;
-  background-image: url("https://plus.unsplash.com/premium_photo-1675826774815-35b8a48ddc2c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  background-size: cover;
-}
-
-.destination {
-  width: 100%;
-  padding: 1.5rem 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-.destination .dest-container {
-  width: 100%;
-  max-width: 2100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  gap: 0.4rem;
-  align-items: flex-start;
-  overflow: hidden;
-}
-.destination .dest-container h2 {
-  font-size: clamp(1.5rem, 2.5vw + 1px, 3rem);
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  color: #000022;
-}
-.destination .dest-container .types-div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  gap: 0.1rem;
-  padding-bottom: 0.6rem;
-}
-.destination .dest-container .types-div a {
-  text-decoration: none;
-  color: #000022;
-  font-size: clamp(1.1rem, 2vw + 1px, 1.4rem);
+.Hero-section h1 {
+  font-family: "Syne", sans-serif;
+  font-size: 4rem;
   font-weight: 500;
-  font-family: "Poppins", sans-serif;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
 }
-.destination .dest-container .types-div i {
-  font-size: clamp(2.1rem, 3vw + 1px, 4rem);
-}
-.destination .dest-container .types-div-2 {
-  display: none;
-}
-.destination .dest-container .item-container {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  padding: 1rem 2rem;
-  width: 100%;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-}
-.destination .dest-container .item-container .items {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  align-items: flex-start;
-  gap: 1.5rem;
-  flex-shrink: 0;
-  max-width: 320px;
-  aspect-ratio: 1/1;
-  scroll-snap-align: start;
-}
-.destination .dest-container .item-container .items img {
+.Hero-section img {
   width: 100%;
   height: 100%;
-  aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 30px;
-}
-.destination .dest-container .item-container .items .img {
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 1/1;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 30px;
-}
-.destination .dest-container .item-container .items h3 {
-  font-size: clamp(1.2rem, 2vw + 1px, 2rem);
-  font-weight: 600;
-}
-.destination .dest-container .item-container .items p {
-  font-size: clamp(1.1rem, 2vw + 1px, 1.2rem);
-  margin-top: 8px;
+  border-radius: 20px;
 }
 
-.stories {
-  width: 100%;
-  padding: 1.5rem 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-.stories .stories-container {
-  width: 100%;
-  max-width: 2100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-.stories .stories-container .st-part1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-.stories .stories-container .st-part1 .st-img {
-  border-radius: clamp(2rem, 5vw + 1px, 3.5rem);
-  overflow: hidden;
-}
-.stories .stories-container .st-part1 .st-img img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.stories .stories-container .st-part1 .st-detail h3 {
-  font-size: clamp(1.2rem, 2vw + 1px, 2rem);
-  font-weight: 600;
-}
-.stories .stories-container .st-part1 .st-detail p {
-  font-size: clamp(1.1rem, 2vw + 1px, 1.2rem);
-  margin-top: 8px;
-  width: max(380px, 70%);
-  text-align: justify;
-}
-.stories .stories-container .st-part2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  align-items: flex-start;
-}
-.stories .stories-container .st-part2 .st-items {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-.stories .stories-container .st-part2 .st-items .img {
-  width: 30%;
-  aspect-ratio: 1/1;
-  border-radius: clamp(1rem, 5vw + 1px, 3.5rem);
-  overflow: hidden;
-}
-.stories .stories-container .st-part2 .st-items .img img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.stories .stories-container .st-part2 .st-items .item-detail {
-  width: 70%;
-}
-
-@media (min-width: 768px) {
-  header {
-    padding: 2vh 4vw;
+@media (min-width: 1023px) {
+  body {
+    padding: 1rem;
   }
-  header nav .nav-part1 a {
-    font-size: 1.3rem;
+  main hr {
+    width: 90%;
   }
-  header nav .nav-part2 i {
-    font-size: 1.5rem;
+  main header {
+    padding: 1rem 3rem;
   }
-  header nav .nav-part2 button {
-    font-size: 1rem;
-    padding: 0.7rem 1.5rem;
+  main header nav .part1 {
+    gap: 1rem;
   }
-  main {
-    padding: 4vh calc(3.2vw + 1px);
+  main header nav .part1 h2 {
+    font-size: 2rem;
   }
-  main .hero .hero-container .hero-part1 {
-    align-items: flex-start;
+  main header nav .part1 img {
+    width: 4rem;
   }
-  main .hero .hero-container .hero-part1 h1 {
-    font-size: clamp(3rem, 7vw + 1px, 4rem);
+  main header nav .part2 {
+    display: none;
+    gap: 1.5rem;
   }
-  main .hero .hero-container .hero-part1 p {
-    font-size: clamp(1.1rem, 2.5vw + px, 1.4rem);
-    width: 80%;
+  main header nav .part2 img {
+    width: 3rem;
   }
-  main .hero .hero-container .hero-part2 {
-    gap: 2.5rem;
+  main header nav .part3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
   }
-}
-@media (min-width: 1024px) {
-  header {
-    padding: 2vh 3.4vw;
-  }
-  header nav .nav-part1 a {
-    font-size: 1.4rem;
-  }
-  header nav .nav-part2 i {
-    cursor: default;
-    font-size: 1.5rem;
-    padding: 0.4rem 7rem;
-    padding-right: 1rem;
-    background: rgb(226, 226, 226);
-    border-radius: 50px;
-    position: relative;
-  }
-  header nav .nav-part2 i p {
-    display: block;
-    font-size: 1rem;
-    opacity: 70%;
-    font-family: "Poppins", sans-serif;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-80%, -50%);
-  }
-  header nav .nav-part2 button {
-    font-size: 1rem;
-    padding: 0.5rem 1.4rem;
-  }
-  header nav .nav-part2 i:nth-child(3) {
+  main header nav .part3 .pt1 {
     display: none;
   }
-  main {
-    padding: 3dvh 3.2vw;
+  main header nav .part3 .pt1 ul {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    font-size: 1.3rem;
   }
-  main .hero {
-    padding: 1rem 0;
-    padding-bottom: 2rem;
+  main header nav .part3 .pt1 ul a {
+    text-decoration: none;
+    letter-spacing: 4px;
+    color: black;
   }
-  main .hero .hero-container {
-    height: -moz-fit-content;
-    height: fit-content;
-    flex-direction: row;
-  }
-  main .hero .hero-container .hero-part1 {
-    width: 50%;
-    height: 100%;
-    gap: 2rem;
-  }
-  main .hero .hero-container .hero-part1 h1 {
-    font-size: clamp(3rem, 5vw + 1px, 6rem);
-    line-height: 1.2;
-  }
-  main .hero .hero-container .hero-part1 button {
-    display: block;
+  main header nav .part3 .pt2 button {
+    margin-left: 1.9rem;
+    padding: 0.7rem 1.3rem;
+    font-weight: 500;
+    letter-spacing: 4px;
     font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 12px;
     border: none;
-    padding: 8px 1.4rem;
-    color: white;
-    background: #1d201f;
-    border-radius: 30px;
-    margin-top: 1rem;
+    background-color: black;
+    color: beige;
   }
-  main .hero .hero-container .hero-part2 {
-    width: 50%;
-    gap: 2rem;
-    grid-template-areas: ". . b b" "a a b b" "a a b b" "a a b b" "a a b b" "a a c c" "a a c c" ". . c c";
+  main header nav .part3 .pt3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 0 1rem;
+  }
+  main header nav .part3 .pt3 .elem h2 {
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+    border-radius: 50%;
+    border: 1px solid black;
+  }
+  main header nav .part3 .pt4 img {
+    width: 4rem;
+  }
+  main .Hero-section {
+    padding: 0.2rem 2.5rem;
+  }
+  main .Hero-section h3 {
+    margin-top: 3rem;
+    font-size: 1rem;
+  }
+  main .Hero-section h1 {
+    font-family: "Syne", sans-serif;
+    font-size: 4.5rem;
+    margin-bottom: 3.5rem;
+    letter-spacing: 0.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  header nav .part3 .pt1 {
+    display: block;
+  }
+}
+.sec2 {
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.sec2 .secpart1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+.sec2 .secpart1 p {
+  text-transform: uppercase;
+  color: rgb(93, 93, 93);
+  margin-bottom: 1rem;
+}
+.sec2 .secpart1 h1 {
+  font-family: "Syne", sans-serif;
+  font-size: 3.2rem;
+  line-height: 1;
+  font-weight: 400;
+}
+.sec2 .secpart1 button {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+}
+.sec2 .line {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}
+.sec2 .secpart2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.sec2 .secpart2 .elem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.8rem;
+  align-self: flex-start;
+}
+.sec2 .secpart2 .elem i {
+  font-size: 4rem;
+  color: grey;
+}
+.sec2 .secpart2 .elem h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.sec2 .secpart2 .elem p {
+  color: grey;
+  text-align: justify;
+}
+.sec2 .secpart2 .lines {
+  height: 1px;
+  width: 100%;
+  background-color: black;
+}
+
+@media (min-width: 1023px) {
+  main .sec2 {
+    padding: 2.5rem;
   }
 }
 @media (min-width: 1199px) {
-  header nav .nav-middle {
-    display: block;
-  }
-  header nav .nav-middle ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    gap: 2rem;
-  }
-  header nav .nav-middle ul li {
-    list-style: none;
-  }
-  header nav .nav-middle ul li a {
-    text-decoration: none;
-    color: #000022;
-    font-size: 0.8rem;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-  }
-  main .destination .dest-container .types-div-2 {
-    display: block;
-    width: 100%;
-  }
-  main .destination .dest-container .types-div-2 ul {
-    display: flex;
+  .sec2 {
     flex-direction: row;
-    overflow-x: auto;
-    width: 100%;
-    gap: calc(3.5vw + 1px);
-    padding: 1rem 2rem;
-    padding-bottom: 0.6rem;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
+    align-items: flex-start;
+    padding: 2.5rem 0;
   }
-  main .destination .dest-container .types-div-2 ul li {
-    list-style: none;
-    scroll-snap-align: start;
+  .sec2 .secpart1 {
+    height: auto;
+    align-self: stretch;
+    justify-content: space-between;
+    width: 60%;
   }
-  main .destination .dest-container .types-div-2 ul li a {
-    text-decoration: none;
-    color: #000022;
-    font-size: calc(1.1vw + 1px);
-    font-weight: 500;
-    font-family: "Poppins", sans-serif;
+  .sec2 .secpart1 p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
   }
-  main .destination .dest-container .types-div {
-    display: none;
+  .sec2 .secpart1 h1 {
+    font-size: 5rem;
   }
-  main .destination .dest-container .item-container .items {
-    max-width: 22vw;
-    aspect-ratio: 3/4;
+  .sec2 .secpart2 {
+    width: 32%;
+    padding: 0 1rem;
+    gap: 3.6rem;
   }
-}
-@media (min-width: 1549px) {
-  header nav .nav-part1 a {
-    font-size: clamp(1.5rem, 2vw + 1px, 2.2rem);
+  .sec2 .secpart2 .elem {
+    gap: 1.7rem;
   }
-  header nav .nav-middle {
-    display: block;
+  .sec2 .secpart2 .elem i {
+    font-size: 4rem;
   }
-  header nav .nav-middle ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    gap: clamp(2.1rem, 3vw + 1px, 4rem);
-  }
-  header nav .nav-middle ul li {
-    list-style: none;
-  }
-  header nav .nav-middle ul li a {
-    font-size: clamp(1.1rem, 1.2vw + 1px, 1.6rem);
-  }
-  header nav .nav-part2 i {
+  .sec2 .secpart2 .elem h2 {
     font-size: 2rem;
-    padding: 0.6rem 9rem;
-    padding-right: 1.5rem;
   }
-  header nav .nav-part2 i p {
+  .sec2 .secpart2 .elem p {
     font-size: 1.2rem;
   }
-  header nav .nav-part2 button {
-    font-size: clamp(1.1rem, 1.2vw + 1px, 1.6rem);
-    padding: 0.9rem clamp(1.5rem, 2vw + 1px, 2.2rem);
+  .sec2 .line {
+    width: 2px;
+    height: auto;
+    align-self: stretch;
   }
-  header nav .nav-part2 i:nth-child(3) {
+}
+.sec3 {
+  width: 100%;
+  padding: 1rem 1.4rem;
+}
+.sec3 .sec3-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.sec3 .sec3-container .sec3-part1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.sec3 .sec3-container .sec3-part1 h2 {
+  font-family: "Syne", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin-bottom: 1.2rem;
+}
+.sec3 .sec3-container .sec3-part1 p {
+  color: rgb(64, 64, 64);
+  font-size: 1.2rem;
+}
+.sec3 .sec3-container .sec3-part2 .sec3-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.sec3 .sec3-container .sec3-part2 .sec3-cards .card-div-part1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+.sec3 .sec3-container .sec3-part2 .sec3-cards .card-div-part1 .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.sec3 .sec3-container .sec3-part2 .sec3-cards .card-div-part1 .card h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.sec3 .sec3-container .sec3-part2 .sec3-cards .card-div-part1 .card .vid {
+  width: 100%;
+  aspect-ratio: 1.515/1;
+  background: #000;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.sec3 .sec3-container .sec3-part2 .sec3-cards .card-div-part1 .card .vid video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.sec3 .sec3-container .sec3-part2 .sec3-cards .card-div-part2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+.sec3 .sec3-container .sec3-part2 .sec3-cards .card-div-part2 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.sec3 .sec3-container .sec3-part2 .sec3-cards .card-div-part2 .card h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.sec3 .sec3-container .sec3-part2 .sec3-cards .card-div-part2 .card .vid {
+  width: 100%;
+  aspect-ratio: 1.515/1;
+  background: #000;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.sec3 .sec3-container .sec3-part2 .sec3-cards .card-div-part2 .card .vid video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+
+@media (min-width: 810px) {
+  .Hero-section {
+    padding: 1.8rem;
+  }
+  .sec2 {
+    padding: 1.8rem;
+  }
+  .sec3 {
+    padding: 1.8rem;
+  }
+  .sec3 .sec3-container {
+    flex-direction: row;
+  }
+  .sec3 .sec3-container .sec3-part1 {
+    padding-top: 10px;
+    position: sticky;
+    top: 0;
+  }
+  .sec3 .sec3-container .sec3-part1 h2 {
+    font-size: 3rem;
+  }
+  .sec3 .sec3-container .sec3-part1 p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+  .sec3 .sec3-container .sec3-part2 .sec3-cards .card-div-part1 .card h3 {
+    font-size: 1.8rem;
+  }
+  .sec3 .sec3-container .sec3-part2 .sec3-cards .card-div-part2 .card h3 {
+    font-size: 1.8rem;
+  }
+  .line {
+    width: 2px;
+    height: auto;
+    align-self: stretch;
+  }
+}
+@media (min-width: 1024px) {
+  main .sec3 {
+    padding: 1rem 2.5rem;
+  }
+}
+@media (min-width: 1199px) {
+  header nav .part3 .pt1 {
     display: none;
   }
-  main {
-    padding: 2rem clamp(3rem, 4vw + 1px, 4rem);
+  .sec3 .sec3-container {
+    gap: 3rem;
   }
-  main .hero {
-    padding: 3vh 0;
+  .sec3 .sec3-container .sec3-part1 {
+    width: 32%;
   }
-  main .hero .hero-container .hero-part1 p {
-    font-size: clamp(1.4rem, 1.5vw + 1px, 1.8rem);
+  .sec3 .sec3-container .sec3-part1 h2 {
+    font-size: 3.5rem;
   }
-  main .hero .hero-container .hero-part1 button {
-    margin-top: 4.5rem;
-    font-size: clamp(1.1rem, 1.2vw + 1px, 1.6rem);
-    padding: 0.9rem clamp(1.5rem, 2vw + 1px, 2.2rem);
+  .sec3 .sec3-container .sec3-part1 p {
+    font-size: 1.4rem;
+    width: 95%;
   }
-  main .hero .hero-container .hero-part2 {
-    aspect-ratio: 1/1;
+  .sec3 .sec3-container .sec3-part2 {
+    width: 68%;
   }
-}
-@keyframes slideIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-    scale: 1;
+  .sec3 .sec3-container .sec3-part2 .sec3-cards {
+    gap: 3rem;
   }
-}
-@keyframes slideIn2 {
-  to {
-    opacity: 1;
-    transform: translateX(0);
-    scale: 1;
+  .sec3 .sec3-container .sec3-part2 .sec3-cards .card-div-part1 {
+    gap: 3rem;
+  }
+  .sec3 .sec3-container .sec3-part2 .sec3-cards .card-div-part2 {
+    gap: 3rem;
+  }
+  .sec3 .sec3-container .sec3-part2 .sec3-cards {
+    flex-direction: row;
   }
 }
-@keyframes slideIn3 {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-    scale: 1;
-  }
-}
-@keyframes fadeOut {
-  to {
-    opacity: 1;
-    scale: 1;
-  }
-}
-@keyframes zoomIn {
-  to {
-    zoom: 1.2%;
-  }
-}
-header nav button {
-  transition: all 0.2s ease-in-out;
-}
-header nav button:hover {
-  background: #00898C;
-  color: white;
-}
-header nav .nav-middle ul li a {
-  position: relative;
-}
-header nav .nav-middle ul li a::after {
-  background: #000;
-  content: "";
-  width: 0%;
-  height: 2px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  margin-top: 2px;
-  transition: all 0.25s ease-in-out;
-}
-header nav .nav-middle ul li a:hover::after {
+.sec4 {
   width: 100%;
+  padding: 1rem 1.4rem;
+}
+.sec4 .line {
+  width: 100%;
+  height: 2px;
+  background-color: #767575;
+}
+.sec4 .sec4-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+.sec4 .sec4-container .cont-part1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+.sec4 .sec4-container .cont-part1 .svg {
+  color: #989797;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+.sec4 .sec4-container .cont-part1 p {
+  font-weight: 600;
+}
+.sec4 .sec4-container .cont-part1 h2 {
+  font-family: "Syne", sans-serif;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+.sec4 .sec4-container .cont-part2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+}
+.sec4 .sec4-container .cont-part2 p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.sec4 .sec4-container .cont-part2 button {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  background-color: #000;
+  border: none;
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+.sec4 .sec4-container .line2 {
+  display: none;
 }
 
-main a {
-  position: relative;
+@media (min-width: 810px) {
+  .sec4 {
+    padding: 1rem 2.4rem;
+  }
+  .sec4 .sec4-container .cont-part1 .svg {
+    margin-bottom: 3rem;
+  }
+  .sec4 .sec4-container .cont-part1 h2 {
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  .sec4 .sec4-container .cont-part2 p {
+    font-size: 1.5rem;
+    color: #767575;
+  }
 }
-main a::after {
-  background: #000;
-  content: "";
-  width: 0%;
-  height: 2px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  margin-top: 2px;
-  transition: all 0.25s ease-in-out;
+@media (min-width: 1199px) {
+  .sec4 {
+    padding: 2rem 2.8rem;
+    height: 85vh;
+  }
+  .sec4 .sec4-container {
+    gap: 3rem;
+    height: 100%;
+    flex-direction: row;
+    padding: 2rem 0;
+  }
+  .sec4 .sec4-container .line2 {
+    display: block;
+    width: 2px;
+    height: auto;
+    align-self: stretch;
+    background-color: #000;
+  }
+  .sec4 .sec4-container .cont-part1 {
+    justify-content: flex-start;
+    height: 100%;
+    width: 70%;
+    position: relative;
+  }
+  .sec4 .sec4-container .cont-part1 .svg {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .sec4 .sec4-container .cont-part1 h2 {
+    font-size: 5.5rem;
+    line-height: 1;
+  }
+  .sec4 .sec4-container .cont-part2 {
+    width: 30%;
+    height: 100%;
+    justify-content: space-between;
+  }
+  .sec4 .sec4-container .cont-part2 p {
+    display: inline-block;
+  }
+  main header {
+    padding: 3vh 4vw;
+  }
+  main header nav .part1 img {
+    width: 3rem;
+  }
+  main header nav .part1 h2 {
+    font-size: 1.7rem;
+  }
+  main header nav .part3 .pt1 {
+    display: block;
+  }
+  main header nav .part3 .pt1 ul {
+    gap: 1.2rem;
+  }
+  main header nav .part3 .pt1 a {
+    font-size: 0.8rem;
+  }
+  main header nav .part3 .pt2 button {
+    font-size: 0.8rem;
+    margin-left: 1rem;
+  }
+  main header nav .part3 .pt3 .elem h2 {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.6rem;
+  }
+  main header nav .part3 .pt4 img {
+    width: 3rem;
+  }
+  main .Hero-section h1 {
+    font-weight: 500;
+    font-size: 6.5vw;
+    letter-spacing: 5px;
+  }
 }
-main a:hover::after {
+footer {
+  padding: 1rem 1.4rem;
+  text-align: center;
+}
+footer .line {
   width: 100%;
+  height: 2px;
+  background-color: rgb(141, 140, 140);
 }
-main .hero .hero-container .hero-part1 button {
-  transition: all 0.2s ease-in-out;
+footer .foot-container .footcard {
+  padding: 1.8rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
 }
-main .hero .hero-container .hero-part1 button:hover {
-  background: #00898C;
+footer .foot-container .footcard .part1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+footer .foot-container .footcard .part1 h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+footer .foot-container .footcard .part1 img {
+  display: inline-block;
+  width: 40px;
+}
+footer .foot-container .footcard .part2 {
+  text-align: justify;
+  line-height: 1.4;
+}
+footer .foot-container .footcard .part2 p {
+  font-size: 1rem;
+  word-spacing: 2px;
+  color: #767575;
+}
+footer .foot-container .footcard .part3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+footer .foot-container .footcard .part3 .elem {
+  padding-top: 2rem;
+}
+footer .foot-container .footcard .part3 .elem h2 {
+  font-size: 0.8rem;
+  padding: 0.8rem 0.9rem;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+footer .foot-container .foot2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+footer .foot-container .foot2 h2 {
+  font-family: "Syne", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+footer .foot-container .foot2 ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.4rem;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+footer .foot-container .foot2 button {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
   color: white;
+  background-color: #000;
+  border: none;
+  border-radius: 8px;
+  text-transform: uppercase;
 }
-main .hero .hero-container .hero-part1 h1 {
-  opacity: 0;
-  transform: translateY(-20px);
-  animation: slideIn 1s ease-out forwards;
+footer .foot-container .foot3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
 }
-main .hero .hero-container .hero-part1 p {
-  opacity: 0;
-  scale: 0.8;
-  animation: fadeOut 1s ease-out forwards;
+footer .foot-container .foot3 h2 {
+  font-family: "Syne", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
 }
-main .hero .hero-container .hero-part2 .imgdiv {
-  scale: 0.9;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: slideIn3 1s ease-out forwards;
+footer .foot-container .foot3 ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.4rem;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
 }
-main .hero .hero-container .hero-part2 .imgdiv1 {
-  scale: 0.9;
-  opacity: 0;
-  transform: translateY(-25px);
-  animation: slideIn 1s ease-out forwards;
+footer .foot-container .foot4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
 }
-main .hero .hero-container .hero-part2 .imgdiv2 {
-  scale: 0.9;
-  opacity: 0;
-  transform: translateX(25px);
-  animation: slideIn2 1s ease-out forwards;
+footer .foot-container .foot4 h2 {
+  font-family: "Syne", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
 }
-main .destination .dest-container .item-container .items .img {
-  scale: 1;
-  transition: all 0.4s ease-in-out;
-}
-main .destination .dest-container .item-container .items .img:hover {
-  scale: 1.02;
+footer .foot-container .foot4 ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.4rem;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
 }
 
-.st-img {
-  scale: 1;
-  transition: all 0.4s ease-in-out;
+.lastsec {
+  padding: 1.9rem 0;
+  padding-bottom: 1rem;
+  text-align: center;
 }
-.st-img:hover {
-  scale: 1.01;
+.lastsec p {
+  font-family: "Syne", sans-serif;
+}
+
+@media (min-width: 810px) {
+  footer {
+    padding: 2rem 2.8rem;
+    height: 40dvh;
+  }
+  footer .line {
+    margin-bottom: 3rem;
+  }
+  footer .foot-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 2.8rem;
+  }
+  footer .foot-container .footcard {
+    width: 20%;
+  }
+  footer .foot-container .footcard:nth-child(1) {
+    width: 40%;
+  }
+  footer .foot-container .line {
+    width: 2px;
+    height: auto;
+    align-self: stretch;
+    display: none;
+  }
+  footer .foot-container .line:nth-child(2) {
+    display: block;
+  }
+  .lastsec {
+    padding: 3rem 0;
+    text-align: center;
+  }
+}
+@media (min-width: 1399px) {
+  main .Hero-section {
+    padding: 3vh 4vw;
+  }
+  main .sec3 {
+    padding: 4vh 4vw;
+  }
+  main .sec4 {
+    padding: 4vh 4vw;
+  }
+  main footer {
+    padding: 3vh 4vw;
+  }
+}
+@media (min-width: 1599px) {
+  main header nav .part1 img {
+    width: 3rem;
+  }
+  main header nav .part1 h2 {
+    font-size: 2.1vw;
+  }
+  main header nav .part3 .pt1 {
+    display: block;
+  }
+  main header nav .part3 .pt1 ul {
+    gap: 2vw;
+  }
+  main header nav .part3 .pt1 a {
+    font-size: 0.9vw;
+  }
+  main header nav .part3 .pt2 button {
+    font-size: 0.9vw;
+    margin-left: 1.5vw;
+    padding: 0.8rem 1.8rem;
+  }
+  main header nav .part3 .pt3 .elem h2 {
+    font-size: 0.9vw;
+    padding: 0.5rem 0.6rem;
+  }
+  main header nav .part3 .pt4 img {
+    width: 3.5vw;
+  }
+  main .Hero-section h3 {
+    font-size: 1.2vw;
+  }
+  main .sec2 .secpart1 h1 {
+    font-size: 5vw;
+  }
+  main .sec2 .secpart1 p {
+    font-size: 1.2vw;
+  }
+  main .sec2 .secpart1 button {
+    font-size: 0.9vw;
+    padding: 0.8rem 1.8rem;
+  }
+  main .sec2 .secpart2 .elem i {
+    font-size: 5vw;
+  }
+  main .sec2 .secpart2 .elem h2 {
+    font-size: 2.5vw;
+  }
+  main .sec2 .secpart2 .elem p {
+    font-size: 1.5vw;
+  }
+  main .sec3 .sec3-container .sec3-part1 h2 {
+    font-size: 4vw;
+  }
+  main .sec3 .sec3-container .sec3-part1 p {
+    font-size: 1.5vw;
+  }
+  main .sec3 .sec3-container .sec3-part2 .sec3-cards .card-div-part1 .card h3 {
+    font-size: 2vw;
+  }
+  main .sec3 .sec3-container .sec3-part2 .sec3-cards .card-div-part1 .card p {
+    font-size: 1vw;
+  }
+  main .sec3 .sec3-container .sec3-part2 .sec3-cards .card-div-part2 .card h3 {
+    font-size: 2vw;
+  }
+  main .sec3 .sec3-container .sec3-part2 .sec3-cards .card-div-part2 .card p {
+    font-size: 1vw;
+  }
+  main .sec4 .line {
+    margin-bottom: 4vw;
+  }
+  main .sec4 .sec4-container .cont-part1 .svg i {
+    font-size: 7vw;
+  }
+  main .sec4 .sec4-container .cont-part1 p {
+    font-size: 1.5vw;
+  }
+  main .sec4 .sec4-container .cont-part1 h2 {
+    font-size: 6vw;
+  }
+  main .sec4 .sec4-container .cont-part2 p {
+    font-size: 1.5vw;
+  }
+  main .sec4 .sec4-container .cont-part2 button {
+    font-size: 0.9vw;
+    padding: 0.8rem 1.8rem;
+  }
+  main footer {
+    padding: 4vw 4vw;
+  }
+  main footer .foot-container .footcard h2 {
+    font-size: 2vw;
+  }
+  main footer .foot-container .footcard li {
+    font-size: 1vw;
+  }
+  main footer .foot-container .footcard .part2 p {
+    font-size: 1vw;
+  }
+  main footer .foot-container .footcard button {
+    font-size: 0.9vw;
+    padding: 0.8rem 1.8rem;
+  }
 }

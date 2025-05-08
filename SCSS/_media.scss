@@ -134,6 +134,31 @@
         }
       }
     }
+    .stories{
+      .stories-container{
+        flex-direction: row;
+        gap: 2rem;
+
+        .st-part1{
+          width: 50%;
+        }
+        .st-part2{
+          align-self: stretch;
+          height: auto;
+          width: 50%;
+
+          .st-items{
+            flex-grow: 1;
+            .img{
+              width: 40%;
+            }
+            .item-detail{
+              width: 60%;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
