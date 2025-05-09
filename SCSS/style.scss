@@ -141,7 +141,6 @@ main {
           width: 100%;
           // border-radius: 12px;
           border-radius: clamp(1rem, calc(5vw + 1px), 2.5rem);
-
         }
 
         .imgdiv1 {
@@ -255,30 +254,30 @@ main {
   }
 }
 
-.stories{
+.stories {
   width: 100%;
   padding: 1.5rem 0;
   @include col-center;
 
-  .stories-container{
+  .stories-container {
     width: 100%;
     max-width: 2100px;
     @include col-center;
 
-    .st-part1{
+    .st-part1 {
       @include col-center;
 
-      .st-img{
+      .st-img {
         border-radius: clamp(2rem, calc(5vw + 1px), 3.5rem);
         overflow: hidden;
 
-        img{
+        img {
           width: 100%;
           height: 100%;
           object-fit: cover;
         }
       }
-      .st-detail{
+      .st-detail {
         h3 {
           font-size: clamp(1.2rem, calc(2vw + 1px), 2rem);
           font-weight: 600;
@@ -292,30 +291,29 @@ main {
         }
       }
     }
-    .st-part2{
+    .st-part2 {
       @include col-center;
       align-items: flex-start;
-      .st-items{
+      .st-items {
         @include row-center;
-        .img{
+        .img {
           width: 30%;
           aspect-ratio: 1/1;
           border-radius: clamp(1rem, calc(3vw + 1px), 2rem);
           overflow: hidden;
-          
-          img{
+
+          img {
             width: 100%;
             height: 100%;
             object-fit: cover;
           }
         }
-        .item-detail{
+        .item-detail {
           width: 70%;
         }
       }
     }
   }
-
 }
 
 @import "_media.scss";

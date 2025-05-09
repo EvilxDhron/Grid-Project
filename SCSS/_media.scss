@@ -134,32 +134,32 @@
         }
       }
     }
-    .stories{
-      .stories-container{
+    .stories {
+      .stories-container {
         flex-direction: row;
-        gap: 2rem;
+        gap: clamp(2rem, calc(4vw + 1px), 3rem);
 
-        .st-part1{
+        .st-part1 {
           width: 50%;
         }
-        .st-part2{
+        .st-part2 {
           align-self: stretch;
           height: auto;
           width: 50%;
 
-          .st-items{
+          .st-items {
             flex-grow: 1;
             gap: 1rem;
-            .img{
+            .img {
               width: 30%;
             }
-            .item-detail{
+            .item-detail {
               width: 70%;
               @include col-center;
               align-items: flex-start;
               gap: 0.4rem;
 
-              h3{
+              h3 {
                 width: max(310px, 80%);
               }
             }
