@@ -149,11 +149,19 @@
 
           .st-items{
             flex-grow: 1;
+            gap: 1rem;
             .img{
-              width: 40%;
+              width: 30%;
             }
             .item-detail{
-              width: 60%;
+              width: 70%;
+              @include col-center;
+              align-items: flex-start;
+              gap: 0.4rem;
+
+              h3{
+                width: max(310px, 80%);
+              }
             }
           }
         }
