@@ -84,6 +84,7 @@ header {
 main {
   width: 100%;
   padding: 1rem 1.4rem;
+  cursor: default;
 
   .hero {
     @include row-center;
@@ -263,6 +264,7 @@ main {
     width: 100%;
     max-width: 2100px;
     @include col-center;
+    gap: 2rem;
 
     .st-part1 {
       @include col-center;

@@ -63,6 +63,7 @@ header nav .nav-part2 button {
 main {
   width: 100%;
   padding: 1rem 1.4rem;
+  cursor: default;
 }
 main .hero {
   display: flex;
@@ -250,6 +251,7 @@ main .hero .hero-container .hero-part2 .imgdiv3 {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  gap: 2rem;
 }
 .stories .stories-container .st-part1 {
   display: flex;
