@@ -146,17 +146,17 @@ main {
 
         .imgdiv1 {
           grid-area: a;
-          background-image: url("https://plus.unsplash.com/premium_photo-1675433344518-21eb72dfc7a5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+          background-image: url("/Grid-Project/assets/hero_img1.webp");
           background-size: cover;
         }
         .imgdiv2 {
           grid-area: b;
-          background-image: url("https://images.unsplash.com/photo-1518495973542-4542c06a5843?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+          background-image: url("/Grid-Project/assets/hero_img2.webp");
           background-size: cover;
         }
         .imgdiv3 {
           grid-area: c;
-          background-image: url("https://plus.unsplash.com/premium_photo-1675826774815-35b8a48ddc2c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+          background-image: url("/Grid-Project/assets/hero_img3.webp");
           background-size: cover;
         }
       }
