@@ -7,8 +7,8 @@
 
 html,
 body {
-  height: 100%;
-  width: 100%;
+  height: auto;
+  width: 100dvw;
 }
 
 ::-webkit-scrollbar {
@@ -280,14 +280,18 @@ main {
         }
       }
       .st-detail {
+        @include col-center;
+        align-items: flex-start;
+        gap: 0.4rem;
+
         h3 {
           font-size: clamp(1.2rem, calc(2vw + 1px), 2rem);
           font-weight: 600;
+          line-height: 1.2;
         }
 
         p {
           font-size: clamp(1.1rem, calc(2vw + 1px), 1.2rem);
-          margin-top: 8px;
           width: max(380px, 70%);
           text-align: justify;
         }
@@ -296,6 +300,8 @@ main {
     .st-part2 {
       @include col-center;
       align-items: flex-start;
+      gap: 2rem;
+
       .st-items {
         @include row-center;
         .img {
@@ -312,6 +318,20 @@ main {
         }
         .item-detail {
           width: 70%;
+          @include col-center;
+          align-items: start;
+          gap: 0.4rem;
+
+          h3 {
+            font-size: clamp(1.2rem, calc(2vw + 1px), 2rem);
+            font-weight: 600;
+            line-height: 1.2;
+          }
+
+          p {
+            font-size: clamp(1.1rem, calc(2vw + 1px), 1.2rem);
+            text-align: justify;
+          }
         }
       }
     }
